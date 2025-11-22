@@ -4,8 +4,8 @@
 
 ## 说明
 
-- 部分库直接使用了库 .swc 文件，详情见[libs](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/libs)
-- 部分库直接使用了源码，详情见[src](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src)
+- 部分库直接使用了库 .swc 文件，详情见 [libs](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/libs)
+- 部分库直接使用了源码，详情见 [src](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src)
 - 对starling做出了部分修改与删减，因为比较复杂所以不做注释说明
 
 ## 致谢
