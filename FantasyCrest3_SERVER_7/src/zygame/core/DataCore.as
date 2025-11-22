@@ -156,12 +156,14 @@ package zygame.core
       
       public static function createDragonMovcilp(dragonName:String, isAuto:Boolean = false) : StarlingArmatureDisplay
       {
-         var display:StarlingArmatureDisplay = _factory.buildArmature(dragonName).display as StarlingArmatureDisplay;
-         if(isAuto)
-         {
-            StarlingFactory._clock.add(display.armature);
-         }
-         return display;
+         // var display:StarlingArmatureDisplay = _factory.buildArmature(dragonName).display as StarlingArmatureDisplay;
+         // if(isAuto)
+         // {
+         //    StarlingFactory._clock.add(display.armature);
+         // }
+         // return display;
+         var display:StarlingArmatureDisplay = _factory.buildArmatureDisplay(dragonName); // 修改错误的buildArmature方法，改为正确的buildArmatureDisplay方法
+         return display; // 直接返回display
       }
       
       public static function hasDragon(skename:String) : Boolean

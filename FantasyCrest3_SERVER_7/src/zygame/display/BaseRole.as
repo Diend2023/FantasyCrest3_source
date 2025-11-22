@@ -906,7 +906,7 @@ package zygame.display
          var stopBoolean:Boolean = false;
          if(_lock)
          {
-            var _temp_1:* = §§findproperty(_keyHitMath);
+            // var _temp_1:* = §§findproperty(_keyHitMath); // 直接注释掉反编译错误的代码
             _keyHitMath -= _keyHitMath > 0 ? 1 : 0;
             stopBoolean = isStopEvent();
             if((_left || _right) && stopBoolean)
@@ -2150,12 +2150,14 @@ package zygame.display
       
       override public function get scaleX() : Number
       {
-         return _scaleX * contentScale;
+         // return _scaleX * contentScale;
+         return super.scaleX * contentScale; // 改用super获取scaleX
       }
       
       override public function get scaleY() : Number
       {
-         return _scaleY * contentScale;
+         // return _scaleY * contentScale;
+         return super.scaleY * contentScale; // 改用super获取scaleY
       }
       
       public function dieEffect() : void

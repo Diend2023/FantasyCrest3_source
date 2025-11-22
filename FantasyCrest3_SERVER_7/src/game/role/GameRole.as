@@ -563,9 +563,10 @@ package game.role
          image = new Image((this.display as Image).texture);
          this.parent.addChildAt(image,0);
          scaleNum = contentScale + (1 - contentScale);
-         image.x = this.x + display.x * (this._scaleX * scaleNum);
-         image.y = this.y + display.y * (this._scaleY * scaleNum);
-         image.scaleX = this.scaleX;
+         // image.x = this.x + display.x * (this._scaleX * scaleNum);
+         // image.y = this.y + display.y * (this._scaleY * scaleNum);
+         image.x = this.x + display.x * (super.scaleX * scaleNum); // 改用super获取scaleX
+         image.y = this.y + display.y * (super.scaleY * scaleNum); // 改用super获取scaleY
          image.scaleY = this.scaleY;
          image.color = color;
          image.blendMode = "add";

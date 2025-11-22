@@ -203,7 +203,8 @@ package zygame.display
             }
             else if(data.blendMode)
             {
-               if(BlendMode.has(data.blendMode))
+               // if(BlendMode.has(data.blendMode))
+               if(BlendMode.get(data.blendMode)) // 修改错误的BlendMode.has方法，改为正确的get方法
                {
                   this.blendMode = data.blendMode;
                }

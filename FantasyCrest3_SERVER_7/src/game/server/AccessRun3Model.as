@@ -87,20 +87,38 @@ package game.server
             if(data.level == 0 && currentLevel > 0 || data.level <= 1 && currentLevel >= 2 || skinCount > 10)
             {
                _lowLevelTime++;
-               if(_lowLevelTime > data.level == 1)
-               {
-                  §§push(2);
-               }
-               else
-               {
-                  §§push(8);
-                  if(!8)
-                  {
-                     §§pop();
-                     §§push(skinCount > 10);
-                  }
-               }
-               if(§§pop())
+               // if(_lowLevelTime > data.level == 1)
+               // {
+               //    §§push(2);
+               // }
+               // else
+               // {
+               //    §§push(8);
+               //    if(!8)
+               //    {
+               //       §§pop();
+               //       §§push(skinCount > 10);
+               //    }
+               // }
+               // if(§§pop())
+               // 修复反编译错误：将复杂的堆栈操作还原为清晰的条件判断
+               // 逻辑：如果低等级持续时间超过阈值，或者跳帧次数过多，则切换模式
+               var shouldSwitchModel:Boolean = false; //
+               if (data.level == 1) //
+               { //
+                  if (_lowLevelTime > 2) //
+                  { //
+                     shouldSwitchModel = true; //
+                  } //
+               } //
+               else //
+               { //
+                  if (_lowLevelTime > 8 || skinCount > 10) //
+                  { //
+                     shouldSwitchModel = true; //
+                  } //
+               } //
+               if(shouldSwitchModel) //
                {
                   Service.client.send({
                      "type":"room_message",

@@ -77,23 +77,40 @@ package game.server
                }
                newKeys = data.key;
                oldKeys = role.getDownKeys();
-               for(var i in oldKeys)
-               {
-                  if(newKeys.indexOf(oldKeys[i]) == -1)
-                  {
-                     role.onUp(oldKeys[i]);
-                  }
-               }
-               var _loc12_:int = 0;
-               var _loc11_:* = newKeys;
-               while(§§hasnext(_loc11_,_loc12_))
-               {
-                  var i2:Object = §§nextname(_loc12_,_loc11_);
-                  if(oldKeys.indexOf(newKeys[i2]) == -1)
-                  {
-                     role.onDown(newKeys[i2]);
-                  }
-               }
+               // for(var i in oldKeys)
+               // {
+               //    if(newKeys.indexOf(oldKeys[i]) == -1)
+               //    {
+               //       role.onUp(oldKeys[i]);
+               //    }
+               // }
+               // var _loc12_:int = 0;
+               // var _loc11_:* = newKeys;
+               // while(§§hasnext(_loc11_,_loc12_))
+               // {
+               //    var i2:Object = §§nextname(_loc12_,_loc11_);
+               //    if(oldKeys.indexOf(newKeys[i2]) == -1)
+               //    {
+               //       role.onDown(newKeys[i2]);
+               //    }
+               // }
+               // 修复反编译错误，改为正常的for循环
+               var i:int = 0; //
+               for(i = 0; i < oldKeys.length; i++) //
+               { //
+                  if(newKeys.indexOf(oldKeys[i]) == -1) //
+                  { //
+                     role.onUp(oldKeys[i]); //
+                  } //
+               } //
+               var j:int = 0; //
+               for(j = 0; j < newKeys.length; j++) //
+               { //
+                  if(oldKeys.indexOf(newKeys[j]) == -1) //
+                  { //
+                     role.onDown(newKeys[j]); //
+                  } //
+               } //
                break;
             case "down":
                if(!GameCore.currentWorld.auto)

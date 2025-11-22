@@ -55,33 +55,48 @@ package game.world
          {
             case 90:
                SceneCore.pushView(new GameTipsView("启动回血指令"));
-               var _loc6_:int = 0;
-               var _loc5_:* = this.getRoleList();
-               while(§§hasnext(_loc5_,_loc6_))
-               {
-                  var hp:Object = §§nextname(_loc6_,_loc5_);
-                  this.getRoleList()[hp].attribute.hp = this.getRoleList()[hp].attribute.hpmax;
-               }
+               // var _loc6_:int = 0;
+               // var _loc5_:* = this.getRoleList();
+               // while(§§hasnext(_loc5_,_loc6_))
+               // {
+               //    var hp:Object = §§nextname(_loc6_,_loc5_);
+               //    this.getRoleList()[hp].attribute.hp = this.getRoleList()[hp].attribute.hpmax;
+               // }
+               var hp:int = 0; // 修复反编译错误，改为正常的for循环
+               for(hp = 0; hp < this.getRoleList().length; hp++) //
+               { //
+                  this.getRoleList()[hp].attribute.hp = this.getRoleList()[hp].attribute.hpmax; //
+               } //
                break;
             case 88:
                SceneCore.pushView(new GameTipsView("启动回蓝指令"));
-               var _loc8_:int = 0;
-               var _loc7_:* = this.getRoleList();
-               while(§§hasnext(_loc7_,_loc8_))
-               {
-                  var mp:Object = §§nextname(_loc8_,_loc7_);
-                  (this.getRoleList()[mp] as GameRole).currentMp.value = (this.getRoleList()[mp] as GameRole).mpMax;
-               }
+               // var _loc8_:int = 0;
+               // var _loc7_:* = this.getRoleList();
+               // while(§§hasnext(_loc7_,_loc8_))
+               // {
+               //    var mp:Object = §§nextname(_loc8_,_loc7_);
+               //    (this.getRoleList()[mp] as GameRole).currentMp.value = (this.getRoleList()[mp] as GameRole).mpMax;
+               // }
+               var mp:int = 0; // 修复反编译错误，改为正常的for循环
+               for(mp = 0; mp < this.getRoleList().length; mp++) //
+               { //
+                  (this.getRoleList()[mp] as GameRole).currentMp.value = (this.getRoleList()[mp] as GameRole).mpMax; //
+               } //
                break;
             case 67:
                SceneCore.pushView(new GameTipsView("启动清理CD指令"));
-               var _loc10_:int = 0;
-               var _loc9_:* = this.getRoleList();
-               while(§§hasnext(_loc9_,_loc10_))
-               {
-                  var cd:Object = §§nextname(_loc10_,_loc9_);
-                  this.getRoleList()[cd].attribute.clearCD();
-               }
+               // var _loc10_:int = 0;
+               // var _loc9_:* = this.getRoleList();
+               // while(§§hasnext(_loc9_,_loc10_))
+               // {
+               //    var cd:Object = §§nextname(_loc10_,_loc9_);
+               //    this.getRoleList()[cd].attribute.clearCD();
+               // }
+               var cd:int = 0; // 修复反编译错误，改为正常的for循环
+               for(cd = 0; cd < this.getRoleList().length; cd++) //
+               { //
+                  this.getRoleList()[cd].attribute.clearCD(); //
+               } //
                break;
             case 86:
                if(this.getRoleList().length == 2)

@@ -39,7 +39,9 @@ package flash
          while(_loc3_ < int(_loc4_.length))
          {
             _loc5_ = _loc4_[_loc3_];
-            (++_loc2_).push(Boot.__string_rec(_loc5_,""));
+            // (++_loc2_).push(Boot.__string_rec(_loc5_,""));
+            _loc2_.push(Boot.__string_rec(_loc5_,"")); // 修复错误的反编译代码
+            _loc3_++; //
          }
          return param1.tag + "(" + _loc2_.join(",") + ")";
       }
@@ -57,6 +59,7 @@ package flash
          }
          catch(_loc_e_:*)
          {
+            return false; // 修复某些情况下instanceof报错的问题
          }
       }
       
@@ -149,7 +152,9 @@ package flash
             while(_loc6_ < int(_loc7_.length))
             {
                _loc8_ = _loc7_[_loc6_];
-               _loc5_ = ++_loc5_ + ("," + Boot.__string_rec(_loc8_,""));
+               // _loc5_ = ++_loc5_ + ("," + Boot.__string_rec(_loc8_,""));
+               _loc5_ += "," + Boot.__string_rec(_loc8_,""); // 修复错误的反编译代码
+               _loc6_++; //
             }
          }
          Boot.lines = Boot.lines.concat(_loc5_.split("\n"));
@@ -310,7 +315,8 @@ package flash
    }
 }
 
-Array.prototype;
+// Array.prototype;
+var _loc1_:* = Array.prototype; // 修复错误的反编译代码
 _loc1_.setPropertyIsEnumerable("copy",false);
 _loc1_.setPropertyIsEnumerable("insert",false);
 _loc1_.setPropertyIsEnumerable("remove",false);

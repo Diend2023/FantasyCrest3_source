@@ -24,8 +24,9 @@ package zygame.utils
       
       public static var workerToMain:MessageChannel;
       
-      [Embed(source="GIFWorker.swf",mimeType="application/octet-stream")]
-      private static var GIFWorker:Class = §GIFWorker_swf$15fb488c19bf95edf1249f0e9adaa817-438212441§;
+      [Embed(source="GIFWorker.swf",mimeType="application/octet-stream")] //在同目录下添加了原本不存在的GIFWorker.swf文件
+      // private static var GIFWorker:Class = §GIFWorker_swf$15fb488c19bf95edf1249f0e9adaa817-438212441§;
+      private static var GIFWorker:Class // 修复错误的类名
       
       private var _fps:FPSUtil;
       
