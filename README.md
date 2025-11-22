@@ -21,4 +21,4 @@
 
 ## 声明
 
-所有游戏逻辑部分相关代码（[game](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src)、[zygame](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src)等目录）均为原作者 **左眼** （[Rainy](https://github.com/rainyt)、[左眼](https://gitee.com/zygameui)）所有。
+所有游戏逻辑部分相关代码（[game](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src/game)、[zygame](https://github.com/Diend2023/FantasyCrest3_source/tree/main/FantasyCrest3_SERVER_7/src/zygame)等目录）均为原作者 **左眼** （[Rainy](https://github.com/rainyt)、[左眼](https://gitee.com/zygameui)）所有。
