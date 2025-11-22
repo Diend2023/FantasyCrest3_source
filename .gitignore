@@ -6,9 +6,10 @@ bin-release/
 
 # Other files and folders
 .settings/
+.vscode
 
 # Executables
-*.swf
+# *.swf
 *.air
 *.ipa
 *.apk
