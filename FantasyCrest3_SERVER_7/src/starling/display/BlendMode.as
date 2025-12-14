@@ -93,9 +93,10 @@ package starling.display
         public static function has(modeName:String):Boolean //
         { //
             if (sBlendModes == null) registerDefaults(); //
-            return true; //
+            if (modeName in sBlendModes) return true; //
+            return false; //
         } //
-        
+
         /** Registers a blending mode under a certain name. */
         public static function register(name:String, srcFactor:String, dstFactor:String):BlendMode
         {
