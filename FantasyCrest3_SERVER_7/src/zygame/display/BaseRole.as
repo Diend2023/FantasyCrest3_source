@@ -2148,6 +2148,17 @@ package zygame.display
          return this._straight;
       }
       
+      // 供通过 BaseRole 引用的外部代码使用（避免访问私有字段导致的不可访问错误）
+      public function getRawScaleX() : Number //
+      { //
+            return super.scaleX; //
+      } //
+
+      public function getRawScaleY() : Number //
+      { //
+            return super.scaleY; //
+      } //
+
       override public function get scaleX() : Number
       {
          // return _scaleX * contentScale;

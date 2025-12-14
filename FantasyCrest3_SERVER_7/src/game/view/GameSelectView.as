@@ -67,7 +67,8 @@ package game.view
          {
             World.defalutClass = worldClass;
          }
-         this.addEventListener("removedFromStage",onRemove);
+         // this.addEventListener("removedFromStage",onRemove);
+         this.addEventListener("removedFromStage",onRemoveForClearKey); // 修复函数名称重复的问题
          is1PSelect = Math.random() > 0.5;
       }
       
@@ -79,7 +80,8 @@ package game.view
          return view;
       }
       
-      public function onRemove(e:Event) : void
+      // public function onRemove(e:Event) : void
+      public function onRemoveForClearKey(e:Event) : void //修复函数名称重复的问题
       {
          this.clearKey();
       }

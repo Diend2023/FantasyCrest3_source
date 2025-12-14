@@ -316,38 +316,38 @@ package flash
 }
 
 // Array.prototype;
-var _loc1_:* = Array.prototype; // 修复错误的反编译代码
-_loc1_.setPropertyIsEnumerable("copy",false);
-_loc1_.setPropertyIsEnumerable("insert",false);
-_loc1_.setPropertyIsEnumerable("remove",false);
-_loc1_.setPropertyIsEnumerable("iterator",false);
-_loc1_["filter"] = function(param1:Function):Array
-{
-   var _loc2_:Array = [];
-   var _loc3_:int = 0;
-   var _loc4_:int = int(this.length);
-   while(_loc3_ < _loc4_)
-   {
-      if(param1(this[_loc3_]))
-      {
-         _loc2_.push(this[_loc3_]);
-      }
-      _loc3_++;
-   }
-   return _loc2_;
-};
-_loc1_["map"] = function(param1:Function):Array
-{
-   var _loc2_:Array = [];
-   var _loc3_:int = 0;
-   var _loc4_:int = int(this.length);
-   while(_loc3_ < _loc4_)
-   {
-      _loc2_.push(param1(this[_loc3_]));
-      _loc3_++;
-   }
-   return _loc2_;
-};
-_loc1_.setPropertyIsEnumerable("map",false);
-_loc1_.setPropertyIsEnumerable("filter",false);
+// var _loc1_:* = Array.prototype; // 修复错误的反编译代码
+// _loc1_.setPropertyIsEnumerable("copy",false);
+// _loc1_.setPropertyIsEnumerable("insert",false);
+// _loc1_.setPropertyIsEnumerable("remove",false);
+// _loc1_.setPropertyIsEnumerable("iterator",false);
+// _loc1_["filter"] = function(param1:Function):Array
+// {
+//    var _loc2_:Array = [];
+//    var _loc3_:int = 0;
+//    var _loc4_:int = int(this.length);
+//    while(_loc3_ < _loc4_)
+//    {
+//       if(param1(this[_loc3_]))
+//       {
+//          _loc2_.push(this[_loc3_]);
+//       }
+//       _loc3_++;
+//    }
+//    return _loc2_;
+// };
+// _loc1_["map"] = function(param1:Function):Array
+// {
+//    var _loc2_:Array = [];
+//    var _loc3_:int = 0;
+//    var _loc4_:int = int(this.length);
+//    while(_loc3_ < _loc4_)
+//    {
+//       _loc2_.push(param1(this[_loc3_]));
+//       _loc3_++;
+//    }
+//    return _loc2_;
+// };
+// _loc1_.setPropertyIsEnumerable("map",false);
+// _loc1_.setPropertyIsEnumerable("filter",false);
 

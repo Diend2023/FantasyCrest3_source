@@ -139,7 +139,8 @@ package game.view
          _list.width = bg.width;
          _list.height = 300;
          _list.itemRendererType = OnlineRoomItem;
-         _list.addEventListener("change",onChange);
+         // _list.addEventListener("change",onChange);
+         _list.addEventListener("change",onChangeForCheck); // 修复函数名称重复的问题
       }
       
       public function onExit(target:String) : void
@@ -149,7 +150,8 @@ package game.view
          SceneCore.replaceScene(new GameStartMain());
       }
       
-      private function onChange(e:Event) : void
+      // private function onChange(e:Event) : void
+      private function onChangeForCheck(e:Event) : void // 修复函数名称重复的问题
       {
          if(_list.selectedItem)
          {
