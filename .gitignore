@@ -16,3 +16,11 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+WebRuntime/*
+!WebRuntime/WebRuntime.fla
+!WebRuntime/WebRuntime.swf
+!WebRuntime/WebRuntime-app.xml
+!WebRuntime/AppIconsForPublish/
+!WebRuntime/WebRuntime_fla/
+!WebRuntime/zygame/

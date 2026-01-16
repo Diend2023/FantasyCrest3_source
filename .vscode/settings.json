@@ -1,3 +1,6 @@
 {
-	"as3mxml.sdk.framework": "E:\\Adobe Animate CC 2018\\AIRSDK\\AIRSDK_51.2.2"
+	// 对于本地版，使用 AIRSDK 51.2.2
+	// "as3mxml.sdk.framework": "e:\\Adobe Animate CC 2018\\AIRSDK\\AIRSDK_51.2.2"
+	// 对于网页版，使用 AIRSDK 50.2.5
+	"as3mxml.sdk.framework": "e:\\Adobe Animate CC 2018\\AIRSDK\\AIRSDK_50.2.5"
 }

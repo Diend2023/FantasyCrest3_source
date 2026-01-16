@@ -1,0 +1,23 @@
+{
+	"config": "air",
+	"compilerOptions": {
+		"source-path": [
+			"src"
+		],
+		"library-path": [
+			"libs"
+		],
+		"output": "bin/FantasyCrest3.swf",
+		"debug": true,
+		"default-background-color": "#ffffff",
+		"default-frame-rate": 24,
+		"default-size": {
+			"width": 1600,
+			"height": 900
+		},
+		"swf-version": 45,
+		"target-player": "34.0"
+	},
+	"application": "src/FantasyCrest3-app.xml",
+	"mainClass": "FantasyCrest3"
+}

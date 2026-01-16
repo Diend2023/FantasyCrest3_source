@@ -7,6 +7,13 @@
             "name": "Launch AIR Application",
             "program": "${workspaceFolder}/FantasyCrest3_SERVER_7/bin/FantasyCrest3_SERVER_7.xml",
             "profile": "desktop",
+        },
+        {
+            "type": "swf",
+            "request": "launch",
+            "name": "Launch SWF",
+            "program": "${workspaceFolder}/FantasyCrest3/bin/FantasyCrest3-app.xml",
+            "profile": "web",
         }
     ]
 }

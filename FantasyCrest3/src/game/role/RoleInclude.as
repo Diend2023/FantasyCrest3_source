@@ -1,0 +1,63 @@
+package game.role
+{
+   public class RoleInclude
+   {
+      
+      public function RoleInclude()
+      {
+         super();
+         MingRen;
+         JianXin;
+         Hchq;
+         TeLanKeSi;
+         SuoLong;
+         GuiJianShi;
+         BuLuoLi;
+         SanZhi;
+         BaiMian;
+         Cike;
+         YaSiNa;
+         LuFei;
+         HuaMuLan;
+         WuKong;
+         AiSi;
+         TongRen;
+         FLS;
+         Twelve;
+         ShaLu;
+         YuMingFangShouShi;
+         XiaoLin;
+         Marisa;
+         MeiHong;
+         HuangFeiHong;
+         KaWenDiXu;
+         WBBD;
+         HeiAnWuShi;
+         XiaoMeiYan;
+         DaMo;
+         DongShiLang;
+         Luo;
+         ShenZi;
+         LvBu;
+         Mixieer;
+         Tof;
+         Axiuluo;
+         YiLun;
+         JianHun;
+         Jiao;
+         GuiZiShouJX;
+         YiHu;
+         WuKongChaoLan;
+         You;
+         Kaixa;
+         LanQuan;
+         Qiyu;
+         ShengZhiZhe;
+         PenHuoLong;
+         Nazi;
+         SunCe;
+         HBL;
+      }
+   }
+}
+
