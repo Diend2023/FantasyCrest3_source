@@ -10,6 +10,7 @@
 
 ## 致谢
 
+- **jindrapetrik** - [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler)
 - **DragonBones** - [DragonBones](https://github.com/DragonBones/DragonBonesAS)
 - **zmLiu** - [lzm](https://github.com/zmLiu/StarlingFeathers)
 - **softplat** - [parse、parser](https://github.com/softplat/ascript)
@@ -18,6 +19,7 @@
 - **arkeus** - [as3-tiled-reader](https://github.com/arkeus/as3-tiled-reader)
 - **feathersui** - [feathers](https://github.com/feathersui/feathersui-starling)
 - **deltaluca** - [nape](https://github.com/deltaluca/nape)
+- **HARMAN** - [Adobe AIR SDK from HARMAN](https://airsdk.harman.com)
 
 ## 声明
 
